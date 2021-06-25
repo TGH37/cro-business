@@ -1,0 +1,15 @@
+.socialMediaContainer {
+  display: flex;
+}
+
+.socialMediaContainer > * {
+  margin: 0 1rem;
+}
+
+.linkedin {
+  color: #0A66C2;
+}
+
+.facebook {
+  color: #0D8AF0;
+}

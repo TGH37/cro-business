@@ -1,0 +1,41 @@
+@import 'utilities';
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-color;
+  padding: 1rem;
+  
+
+
+  & span {
+    font-size: x-small;
+
+    @media(min-width: $breakpoint-desktop) {
+      align-self: start;
+    }
+  }
+  
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+
+  @media(min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  & li {
+    padding: 0.5rem;
+    @media(min-width: $breakpoint-desktop) {
+      padding: 0;      
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+@import 'utilities';
+
+$hero-height: 500px;
+
+.heroContainer {
+position: relative;
+margin: auto;
+width: 80%;
+display: block;
+}
+
+.heroImageContainer {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+}
+
+.heroImage {
+  opacity: 0.5;
+}
+
+.heroTextContainer {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  
+  & * {
+    z-index: 2;
+  }
+}
+

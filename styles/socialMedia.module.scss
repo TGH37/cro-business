@@ -1,0 +1,20 @@
+@import 'utilities';
+
+$linkedin-color: #0A66C2;
+$facebook-color: #0D8AF0;
+
+.socialMediaContainer {
+  display: flex;
+
+  & > * {
+    margin: 0 1rem;
+
+  }
+}
+
+.linkedin {
+  color: $linkedin-color;
+}
+.facebook {
+  color: $facebook-color;
+}

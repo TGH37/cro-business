@@ -1,15 +1,18 @@
 import Link from 'next/link'
+import React, { useContext } from 'react'
+import Hero from '../components/Hero'
 import Layout from '../components/Layout'
+import Services from '../components/Services'
+import { GlobalContext } from '../contexts/GlobalContext'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  const { companyName } = useContext(GlobalContext);
+  return(
+    <Layout title={`Home | ${companyName}`}>
+      <Hero />
+      <Services />
+    </Layout>
+  )
+}
 
 export default IndexPage

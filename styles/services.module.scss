@@ -1,0 +1,11 @@
+@import 'card';
+
+.servicesContainer {
+
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+}

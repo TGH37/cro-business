@@ -1,0 +1,17 @@
+@import 'utilities';
+
+.card {
+  border: 1px solid black;
+  // height: max-content;
+}
+
+.cardImageContainer {
+  width: 100%;
+  min-height: 50%;
+  position: relative;
+  display: block;
+}
+
+.cardImage {
+  opacity: 1;
+}
