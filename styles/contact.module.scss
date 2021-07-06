@@ -1,0 +1,81 @@
+@import 'utilities';
+@import "button";
+
+.contactContainer {
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  & > * {
+    margin-top: 1rem;
+  }
+}
+
+.contactForm {
+  display: grid;
+  min-width: 100%;
+  // grid-template-rows: repeat(7, 1fr);
+  row-gap: 1rem;
+  // grid-template-columns: auto;
+  & > div {
+    grid-column: 1/2;
+  }
+  
+  @media (min-width: $breakpoint-desktop) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+    & > div {
+      grid-column: auto;
+    }
+
+  }
+  
+  & label {
+    display: block;
+  }
+  & input {
+    min-width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    border: 2px solid black;    
+  }
+  
+  & textarea {
+    grid-column: 1/2;
+    padding: 0.25rem;
+    border: 2px solid black;
+    @media (min-width: $breakpoint-desktop) {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.requiredFormField::before {
+  content:"* ";
+  color: red;
+}
+
+.formSubmitBtn {
+  min-height: 50px;
+  
+  @media (min-width: $breakpoint-desktop) {
+    // width: 40%;
+    width: min-content;
+    padding: .75rem 2rem !important;
+    // margin-left: 1rem;
+  }
+}
+
+.confirmationLine {
+  align-self: center;
+  font-weight: bold;
+  grid-row: 6/7;
+  grid-column: 1/3;
+}

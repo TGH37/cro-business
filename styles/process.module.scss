@@ -1,0 +1,102 @@
+@import 'utilities';
+$step-container-width: 40%;
+
+.processContainer {
+  margin: 3rem 0;
+  text-align: center;
+  & > p {
+    margin: 3rem auto;
+
+  }
+  
+  @media(min-width: $breakpoint-desktop) {
+    & > p {
+      width: 50%  
+    }
+  }
+}
+
+.processStepsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & > * {
+    @media (min-width: $breakpoint-desktop) {
+      width: $step-container-width;
+    }
+  }
+}
+
+$pseudo-border-radius: 5px;
+$arrow-rotation-angle: 20deg;
+
+@function set-z-rotation($rotation-angle, $isLHS: true) {
+  @if $isLHS {
+    @return $rotation-angle;
+  } @else {
+    @return 180deg - $rotation-angle;
+  } 
+}
+
+.arrowSVG {
+  align-self: center;
+  
+}
+@media (min-width: $breakpoint-desktop) {
+  
+  .pointingRHS {
+    transform: rotateZ(set-z-rotation($arrow-rotation-angle));
+  }
+  
+  .pointingLHS {
+    transform: rotateZ(set-z-rotation($arrow-rotation-angle, false));
+  }
+}
+
+.processStepLHS, .processStepRHS {
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
+  }
+}
+
+.processStepLHS {
+  @media (min-width: $breakpoint-desktop) {
+    
+  }
+}
+.processStepRHS {
+  @media (min-width: $breakpoint-desktop) {
+    align-self: flex-end;
+  }
+}
+
+.pointingRHS, .pointingLHS {
+  width: fit-content;
+}
+
+.processStep {
+  $border-thickness: 2px;
+  $border-color: $primary-color;
+  position: relative;
+  &::after, &::before {
+    content: '';
+    width: 3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-top: $border-thickness solid $border-color;
+    border-bottom: $border-thickness solid $border-color;
+  }
+  &::before {
+    left: 0;
+    border-left: $border-thickness solid $border-color;
+    border-top-left-radius: $pseudo-border-radius;
+    border-bottom-left-radius: $pseudo-border-radius;
+  }
+  &::after {
+    right: 0;
+    border-right: $border-thickness solid $border-color;
+    border-top-right-radius: $pseudo-border-radius;
+    border-bottom-right-radius: $pseudo-border-radius;
+  }
+}

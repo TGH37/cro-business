@@ -1,0 +1,31 @@
+@import 'utilities';
+
+.contentContainer {
+  margin: auto;
+  @media (min-width: $breakpoint-desktop) {
+    width: 75%;
+  }
+  
+  & > h3, & > p {
+    text-align: left !important;
+    padding: 0;
+  }
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & ul {
+    margin-left: 2rem;
+    // color: grey;
+  }
+  & li {
+    list-style: initial;
+    font-size: 1.15rem;
+  }
+
+  & a {
+    text-decoration: underline;
+    // font-weight: bold;
+    color: blue;
+  }
+}

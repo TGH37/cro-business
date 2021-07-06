@@ -1,0 +1,23 @@
+@import 'utilities';
+
+.buttonPrimary {
+  background-color: $primary-color;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.buttonSecondary {
+  // background-image: linear-gradient(to right, darken($secondary-color, 2%), $secondary-color);
+  background-color: $secondary-color;
+  color: #3D3D3D;
+  & * {
+  }
+}
+.buttonSuccess {
+  background-color: $success-color;
+  color: white;
+  & * {
+    text-align: center;
+  }
+}

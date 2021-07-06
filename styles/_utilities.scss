@@ -1,8 +1,8 @@
-$dark-color: #777;
+$dark-color: #5A6066;
 $light-color: #F0F0F0;
 $text-color: #333333;
 $danger-color: #BE2B36;
-$success-color: #178017;
+$success-color: #5CBCB6;
 $highlight-color: #ADFF2F;
 $cool-color: #257FD7;
 $link-color: #337ab7;
@@ -11,6 +11,15 @@ $greyed-text: #333333;
 $white-color: #fff;
 $btn-hover-color: #99CCFF;
 
+$primary-color: #62CCC5;
+$secondary-color: #F0F0F0;
+
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
+
+
+// Typography
+.sectionTitle {
+  font-size: 2.5rem;
+}

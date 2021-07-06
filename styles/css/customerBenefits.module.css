@@ -1,0 +1,71 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.cardContainer, .benefitCardContainer {
+  margin: auto;
+  height: min-content;
+  display: grid;
+  gap: 5vh;
+}
+
+@media (min-width: 1024px) {
+  .cardContainer, .benefitCardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+  }
+}
+
+.card {
+  overflow-y: hidden;
+  margin-bottom: 2rem;
+}
+
+.cardImageContainer {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: block;
+}
+
+.cardImage {
+  opacity: 0.90;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer p {
+  margin: 0;
+}
+
+.benefitCardContainer {
+  gap: 3vh;
+}
+
+.benefitCard {
+  height: min-content;
+  overflow-y: hidden;
+}
+
+.cardIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.cardIcon {
+  color: #5A6066;
+}
+
+.customerBenefitsContainer {
+  text-align: center;
+}

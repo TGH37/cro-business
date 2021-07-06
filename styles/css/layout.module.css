@@ -1,12 +1,22 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
 .navbar {
-  background-color: #F0F0F0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: relative;
-  min-width: 300px;
+  max-width: 100%;
+  min-width: 150px;
   justify-items: center;
+  font-weight: bold;
+  font-size: large;
 }
 
 @media (min-width: 1024px) {
@@ -39,6 +49,10 @@
   }
 }
 
+.navbar ul li a {
+  font-size: 1.5rem;
+}
+
 .navbar ul :first-child, .navbar ul :last-child {
   margin: 0;
 }
@@ -47,11 +61,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-width: 210px;
 }
 
 .logoContainer h1 {
-  color: #777;
+  color: #5A6066;
 }
 
 .menuIcon {
@@ -72,6 +85,7 @@
   visibility: visible;
   width: min-content;
   height: min-content;
+  text-align: center;
 }
 
 .closedMenu {
@@ -80,22 +94,28 @@
   height: 0;
 }
 
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F0F0F0;
   padding: 1rem;
+  font-weight: bold;
+  border-top: 1px solid grey;
+  margin-bottom: 1rem !important;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 1rem 8rem;
+  }
 }
 
 .footer span {
   font-size: x-small;
-}
-
-@media (min-width: 1024px) {
-  .footer span {
-    align-self: start;
-  }
 }
 
 .footerNav {
@@ -103,10 +123,12 @@
   flex-direction: column;
   align-items: center;
   margin: 1rem 0;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 1024px) {
   .footerNav {
+    margin: 2rem 0;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
@@ -121,4 +143,67 @@
   .footerNav li {
     padding: 0;
   }
+}
+
+.legalContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .legalContainer {
+    flex-direction: row;
+  }
+}
+
+.legalContainer span {
+  font-size: x-small;
+}
+
+.policyContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: inherit;
+}
+
+.policyContainer a {
+  padding: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  .policyContainer a {
+    margin-left: 3rem;
+  }
+}
+
+.bodyContainer {
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.bodyContainer > * {
+  margin: 3rem 0;
+}
+
+@media (min-width: 1024px) {
+  .bodyContainer {
+    max-width: 1920px;
+    padding: 0 1rem;
+  }
+  .bodyContainer > * {
+    margin: 3rem 0;
+  }
+}
+
+.navHeader {
+  min-height: 100px;
+}
+
+.stickyNavBtns {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
 }

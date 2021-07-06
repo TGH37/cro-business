@@ -1,0 +1,36 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.contentContainer {
+  margin: auto;
+}
+
+@media (min-width: 1024px) {
+  .contentContainer {
+    width: 75%;
+  }
+}
+
+.contentContainer > h3, .contentContainer > p {
+  text-align: left !important;
+  padding: 0;
+}
+
+.contentContainer p {
+  font-size: 1.2rem;
+}
+
+.contentContainer ul {
+  margin-left: 2rem;
+}
+
+.contentContainer li {
+  list-style: initial;
+  font-size: 1.15rem;
+}
+
+.contentContainer a {
+  text-decoration: underline;
+  color: blue;
+}

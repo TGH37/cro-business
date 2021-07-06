@@ -1,20 +1,137 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.cardContainer, .benefitCardContainer {
+  margin: auto;
+  height: min-content;
+  display: grid;
+  gap: 5vh;
+}
+
+@media (min-width: 1024px) {
+  .cardContainer, .benefitCardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+  }
+}
+
 .card {
-  border: 1px solid black;
+  overflow-y: hidden;
+  margin-bottom: 2rem;
 }
 
 .cardImageContainer {
   width: 100%;
-  min-height: 50%;
+  aspect-ratio: 16 / 9;
   position: relative;
   display: block;
 }
 
 .cardImage {
-  opacity: 1;
+  opacity: 0.90;
 }
 
-.cardContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1%;
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer p {
+  margin: 0;
+}
+
+.benefitCardContainer {
+  gap: 3vh;
+}
+
+.benefitCard {
+  height: min-content;
+  overflow-y: hidden;
+}
+
+.cardIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.cardIcon {
+  color: #5A6066;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.buttonPrimary {
+  background-color: #62CCC5;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  cursor: pointer;
+}
+
+.buttonSecondary {
+  background-color: #F0F0F0;
+  color: #3D3D3D;
+}
+
+.buttonSuccess {
+  background-color: #5CBCB6;
+  color: white;
+}
+
+.buttonSuccess * {
+  text-align: center;
+}
+
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.servicesContainer > p {
+  margin: 3rem auto;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+}
+
+.servicesContainer > a {
+  margin-top: 1rem;
+}
+
+.servicesContainer .showMore {
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 0;
+}
+
+@media (min-width: 1024px) {
+  .servicesContainer > p {
+    margin: 3rem auto;
+    margin-top: 1rem;
+    width: 50%;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  width: 100%;
+}
+
+.btnContainer > button {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .btnContainer {
+    display: none;
+  }
 }

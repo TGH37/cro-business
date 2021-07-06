@@ -1,0 +1,87 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.processContainer {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.processContainer > p {
+  margin: 3rem auto;
+}
+
+@media (min-width: 1024px) {
+  .processContainer > p {
+    width: 50%;
+  }
+}
+
+.processStepsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .processStepsContainer > * {
+    width: 40%;
+  }
+}
+
+.arrowSVG {
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .pointingRHS {
+    transform: rotateZ(20deg);
+  }
+  .pointingLHS {
+    transform: rotateZ(160deg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .processStepLHS, .processStepRHS {
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .processStepRHS {
+    align-self: flex-end;
+  }
+}
+
+.pointingRHS, .pointingLHS {
+  width: fit-content;
+}
+
+.processStep {
+  position: relative;
+}
+
+.processStep::after, .processStep::before {
+  content: '';
+  width: 3%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #62CCC5;
+  border-bottom: 2px solid #62CCC5;
+}
+
+.processStep::before {
+  left: 0;
+  border-left: 2px solid #62CCC5;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.processStep::after {
+  right: 0;
+  border-right: 2px solid #62CCC5;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

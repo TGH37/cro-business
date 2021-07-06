@@ -1,17 +1,69 @@
 @import 'utilities';
 
+// $aspect-ratio:
+
+.cardContainer, .benefitCardContainer {
+  margin: auto;
+  height: min-content;
+  display: grid;
+  gap: 5vh;
+  
+  @media(min-width: $breakpoint-tablet) {
+    // width: 75%;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+
+  }
+}
+
 .card {
-  border: 1px solid black;
-  // height: max-content;
+  overflow-y: hidden;
+  margin-bottom: 2rem;
 }
 
 .cardImageContainer {
   width: 100%;
-  min-height: 50%;
+  aspect-ratio: 16 / 9;
   position: relative;
   display: block;
 }
 
 .cardImage {
-  opacity: 1;
+  opacity: 0.90;
+}
+
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  & p {
+    margin: 0;
+  }
+}
+
+.benefitCardContainer {
+  gap: 3vh,
+
+}
+
+.benefitCard {
+  height: min-content;
+  overflow-y: hidden;
+}
+
+.cardIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  
+}
+
+
+.cardIcon {
+  color: $dark-color;
 }

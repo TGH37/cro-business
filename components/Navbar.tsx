@@ -6,16 +6,17 @@ import SocialMedia from './SocialMedia';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useBreakpoint } from '../contexts/MediaBreakpointCxt'
 import { GlobalContext } from '../contexts/GlobalContext';
+import { mediaBreakpoints } from '../interfaces'
 
 interface Props {};
 
-interface mediaBreakpoints {
-  xs?: boolean
-}
+// interface mediaBreakpoints {
+//   xs?: boolean
+// }
 
 function Navbar(props: Props) {
   const {} = props;
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(true);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const mediaBreakpoints: mediaBreakpoints = useBreakpoint();
   const { companyName } = useContext(GlobalContext);
 
@@ -44,25 +45,25 @@ function Navbar(props: Props) {
   };
 
   useEffect(() => {
-    if(mediaBreakpoints.xs) setIsMenuOpen(true);
-  }, [mediaBreakpoints.xs])
+    if(mediaBreakpoints.md) setIsMenuOpen(true);
+  }, [mediaBreakpoints])
 
   return (
     <nav className={styles.navbar}>
       <div aria-label="logo-container" className={styles.logoContainer}>
-        <Image aria-label="logo" src='/../public/logo.svg' height={30} width={30} />
-        <h1 aria-label="company-name" >{companyName.toUpperCase()}</h1>
+        <Image aria-label="logo" src='/../public/logo.svg' height={80} width={80} />
+        {/* <h1 aria-label="company-name" >{companyName.toUpperCase()}</h1> */}
       </div>
       <div className={styles.socialMediaContainer}>
         <SocialMedia />
       </div>
       {/* mobile layout (css adjusts position for desktop) */}
       <ul aria-label="navigation-menu" {...getMenuAttrs()}>
-        <li><Link href="/"><a>Solutions</a></Link></li>
-        <li><Link href="/"><a>About</a></Link></li>
-        <li><Link href="/"><a>Contact</a></Link></li>
+        <li><Link href="/"><a>Home</a></Link></li>
+        <li><Link href="/#services"><a>Solutions</a></Link></li>
+        <li><Link href="/#contact"><a>Contact</a></Link></li>
       </ul>
-      <FontAwesomeIcon icon="bars" aria-label="menu-icon" onClick={menuIconClickHandler} {...getMenuIconAttrs()}/>
+      <FontAwesomeIcon icon="bars" size={!mediaBreakpoints.xs ? "1x" : "2x"} aria-label="menu-icon" onClick={menuIconClickHandler} {...getMenuIconAttrs()} tabIndex={0}/>
     </nav>
   );
 };

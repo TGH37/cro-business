@@ -1,6 +1,14 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
 body {
-  margin: 1%;
+  margin: 0;
   padding: 0;
+}
+
+header {
+  margin: 0 !important;
 }
 
 a {
@@ -17,4 +25,32 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+p {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, p, a, ul {
+  color: #3D3D3D;
+}
+
+h1, h3, p {
+  text-align: center;
+}
+
+button {
+  font-size: large;
+  min-width: 75px;
+  min-height: min-content;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem !important;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+}
+
+button:hover {
+  cursor: pointer;
 }

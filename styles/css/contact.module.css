@@ -1,0 +1,113 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
+.buttonPrimary {
+  background-color: #62CCC5;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  cursor: pointer;
+}
+
+.buttonSecondary {
+  background-color: #F0F0F0;
+  color: #3D3D3D;
+}
+
+.buttonSuccess {
+  background-color: #5CBCB6;
+  color: white;
+}
+
+.buttonSuccess * {
+  text-align: center;
+}
+
+.contactContainer {
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.contactInfoContainer > * {
+  margin-top: 1rem;
+}
+
+.contactForm {
+  display: grid;
+  min-width: 100%;
+  row-gap: 1rem;
+}
+
+.contactForm > div {
+  grid-column: 1/2;
+}
+
+@media (min-width: 1024px) {
+  .contactForm {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+  }
+  .contactForm > div {
+    grid-column: auto;
+  }
+}
+
+.contactForm label {
+  display: block;
+}
+
+.contactForm input {
+  min-width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  border: 2px solid black;
+}
+
+.contactForm textarea {
+  grid-column: 1/2;
+  padding: 0.25rem;
+  border: 2px solid black;
+}
+
+@media (min-width: 1024px) {
+  .contactForm textarea {
+    grid-column: 1/3;
+  }
+}
+
+.requiredFormField::before {
+  content: "* ";
+  color: red;
+}
+
+.formSubmitBtn {
+  min-height: 50px;
+}
+
+@media (min-width: 1024px) {
+  .formSubmitBtn {
+    width: min-content;
+    padding: .75rem 2rem !important;
+  }
+}
+
+.confirmationLine {
+  align-self: center;
+  font-weight: bold;
+  grid-row: 6/7;
+  grid-column: 1/3;
+}

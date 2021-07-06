@@ -1,2 +1,32 @@
+@import 'utilities';
 @import 'navbar';
 @import 'footer';
+
+.bodyContainer {
+  margin: auto;
+  
+  padding: 0 2rem;
+  & > * {
+    margin: 3rem 0;
+  }
+
+  @media(min-width: $breakpoint-desktop) {
+    max-width: 1920px;
+    padding: 0 1rem;
+    & > * {
+      margin: 3rem 0;
+    }
+
+  }
+}
+
+.navHeader {
+  // width: 100vw;  
+  min-height: 100px;
+}
+
+.stickyNavBtns {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+}

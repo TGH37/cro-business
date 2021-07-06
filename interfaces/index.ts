@@ -8,3 +8,10 @@ export type User = {
   id: number
   name: string
 }
+
+export interface mediaBreakpoints {
+  xs?: boolean
+  md?: boolean
+  lg?: boolean
+  xl?: boolean
+}

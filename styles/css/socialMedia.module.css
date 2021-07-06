@@ -1,9 +1,13 @@
+.sectionTitle {
+  font-size: 2.5rem;
+}
+
 .socialMediaContainer {
   display: flex;
 }
 
 .socialMediaContainer > * {
-  margin: 0 1rem;
+  margin-left: 1rem;
 }
 
 .linkedin {
