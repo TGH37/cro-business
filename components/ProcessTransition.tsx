@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/css/process.module.css';
 import { useBreakpoint } from '../contexts/MediaBreakpointCxt'
-import { rootCertificates } from 'tls';
 import { mediaBreakpoints } from '../interfaces'
 
 interface Props {
   isLeftAligned: boolean
 };
-
-// interface mediaBreakpoints {
-//   xs?: boolean
-// }
 
 function ProcessTransition(props: Props) {
   const {isLeftAligned} = props;
@@ -20,8 +15,7 @@ function ProcessTransition(props: Props) {
   useEffect(() => {
     if(!mediaBreakpoints.md) setIsMobileLayout(true);
     else setIsMobileLayout(false);
-    console.log(mediaBreakpoints)
-  }, [mediaBreakpoints.md])
+  }, [mediaBreakpoints.md]);
 
   return (
     <div className={`${styles.arrowSVG} ${isLeftAligned ? styles.pointingRHS : styles.pointingLHS}`} style={{transform: isMobileLayout ? "rotateZ(90deg)" : ""}}>

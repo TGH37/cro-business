@@ -1,4 +1,4 @@
-import React, { useEffect, useState,  CSSProperties, useContext } from 'react';
+import React, { useState,  CSSProperties, useContext } from 'react';
 import styles from '../styles/css/contact.module.css';
 import { GlobalContext } from '../contexts/GlobalContext';
 

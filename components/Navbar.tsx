@@ -1,18 +1,15 @@
 import Link from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
-import Image from 'next/image'
-import styles from '../styles/css/layout.module.css'
+import Image from 'next/image';
+import styles from '../styles/css/layout.module.css';
 import SocialMedia from './SocialMedia';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useBreakpoint } from '../contexts/MediaBreakpointCxt'
 import { GlobalContext } from '../contexts/GlobalContext';
-import { mediaBreakpoints } from '../interfaces'
+import { mediaBreakpoints } from '../interfaces';
+import logo from '../public/logo.svg';
 
 interface Props {};
-
-// interface mediaBreakpoints {
-//   xs?: boolean
-// }
 
 function Navbar(props: Props) {
   const {} = props;
@@ -31,7 +28,7 @@ function Navbar(props: Props) {
     {
       className: styles.menuIcon,
       'aria-expanded': false,
-    }
+    };
   };
 
   const getMenuAttrs = () => {
@@ -41,18 +38,17 @@ function Navbar(props: Props) {
     } :
     {
       className: styles.closedMenu,
-    }
+    };
   };
 
   useEffect(() => {
     if(mediaBreakpoints.md) setIsMenuOpen(true);
-  }, [mediaBreakpoints])
+  }, [mediaBreakpoints]);
 
   return (
     <nav className={styles.navbar}>
       <div aria-label="logo-container" className={styles.logoContainer}>
-        <Image aria-label="logo" src='/../public/logo.svg' height={80} width={80} />
-        {/* <h1 aria-label="company-name" >{companyName.toUpperCase()}</h1> */}
+        <Image aria-label="logo" src={logo} height={80} width={80} />
       </div>
       <div className={styles.socialMediaContainer}>
         <SocialMedia />

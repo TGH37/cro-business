@@ -22,13 +22,6 @@ function Footer(props: Props) {
         <li><Link href="/cookie-policy"><a>Cookie Policy</a></Link></li>
       </ul>
       <span>{companyName} 2021, All Rights Reserved.</span>
-      {/* <div className={styles.legalContainer}>
-        <div className={styles.policyContainer}>
-          <Link href="/"><a>Privacy Policy</a></Link>
-          <Link href="/"><a>Terms of Service</a></Link>
-        </div>
-        <span>{companyName} 2021, All Rights Reserved.</span>
-      </div> */}
     </footer>
   );
 };

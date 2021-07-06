@@ -9,9 +9,9 @@ interface globalOptions {
   registeredAddress?: string
   webAddress?: string
   contactNumber?: string
-}
+};
 
-export const GlobalContext = createContext<globalOptions>({})
+export const GlobalContext = createContext<globalOptions>({});
 
 export function GlobalProvider({ children }) {
 

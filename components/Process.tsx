@@ -3,9 +3,6 @@ import styles from '../styles/css/process.module.css';
 import ProcessStep from './ProcessStep';
 import ProcessTransition from './ProcessTransition';
 
-
-
-
 interface Props {};
 
 function Process(props: Props) {
@@ -45,10 +42,6 @@ function Process(props: Props) {
             )
           })
         }
-        {/* <ProcessStep isLeftAligned={true}/>
-        <ProcessStep isLeftAligned={false}/>
-        <ProcessStep isLeftAligned={true}/>
-        <ProcessStep isLeftAligned={false}/> */}
       </div>
 
     </section>

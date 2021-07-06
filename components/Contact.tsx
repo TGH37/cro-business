@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import styles from '../styles/css/contact.module.css';
 import ContactDetails from './ContactDetails';
 import ContactForm from './ContactForm';

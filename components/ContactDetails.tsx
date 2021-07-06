@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext } from 'react';
 import styles from '../styles/css/contact.module.css';
-import { GlobalContext } from '../contexts/GlobalContext'
+import { GlobalContext } from '../contexts/GlobalContext';
 
 interface Props {
 };
