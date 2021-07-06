@@ -11,8 +11,6 @@
   // background-image: linear-gradient(to right, darken($secondary-color, 2%), $secondary-color);
   background-color: $secondary-color;
   color: #3D3D3D;
-  & * {
-  }
 }
 .buttonSuccess {
   background-color: $success-color;

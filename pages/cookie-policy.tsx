@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { useContext } from 'react'
 import Layout from '../components/Layout'
 import { GlobalContext } from '../contexts/GlobalContext'
@@ -41,11 +40,10 @@ const CookiePolicyPage = () => {
       <p>You can adjust the settings in your web browser to determine whether (all) sites can set cookies on your computer.  More information about cookies and how to manage them, specific to your browser, can be found at <a href="https://ico.org.uk/for-the-public/online/cookies/" target="_blank">https://ico.org.uk/for-the-public/online/cookies/</a>.</p>
       <p>If you have any further questions, comments or requests regarding our cookies notice or how we use cookies on our site, please contact us at {emailAddress}.</p>
       <p>This version was last updated on {updateDate}.</p>
-
     </div>
   </Layout>
-  )
-}
+  );
+};
 
 
-export default CookiePolicyPage
+export default CookiePolicyPage;

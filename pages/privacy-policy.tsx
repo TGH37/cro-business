@@ -143,8 +143,8 @@ const PrivacyPolicyPage = () => {
       <p>We try to respond to all legitimate requests within one month. Occasionally it could take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.</p>
     </div>
   </Layout>
-  )
-}
+  );
+};
 
 
-export default PrivacyPolicyPage
+export default PrivacyPolicyPage;
