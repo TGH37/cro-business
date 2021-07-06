@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Image from 'next/image'
-import HeroImage from '../public/images/hero-image.jpg'
+import HeroImage from '../public/images/hero-section-bg-image.jpg'
 import styles from '../styles/css/hero.module.css'
 import { GlobalContext } from '../contexts/GlobalContext';
 import Link from 'next/link';
