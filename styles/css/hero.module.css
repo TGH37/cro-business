@@ -7,12 +7,13 @@
 }
 
 .buttonPrimary {
-  background-color: #62CCC5;
+  background-color: #37aaa3;
   color: white;
 }
 
-.buttonPrimary:hover {
+.buttonPrimary:hover, .buttonPrimary:active {
   cursor: pointer;
+  background-color: #62CCC5;
 }
 
 .buttonSecondary {
@@ -20,13 +21,23 @@
   color: #3D3D3D;
 }
 
+.buttonSecondary:hover, .buttonSecondary:active {
+  cursor: pointer;
+  background-color: #d7d7d7;
+}
+
 .buttonSuccess {
   background-color: #5CBCB6;
   color: white;
+  text-align: center;
 }
 
-.buttonSuccess * {
-  text-align: center;
+.buttonSuccess:hover {
+  background-color: #43a29c;
+}
+
+.buttonSuccess:active {
+  background-color: #5CBCB6;
 }
 
 .heroContainer {

@@ -1,21 +1,33 @@
 @import 'utilities';
 
 .buttonPrimary {
-  background-color: $primary-color;
+  background-color: $primary-color-dark;
   color: white;
-  &:hover {
+  &:hover, &:active {
     cursor: pointer;
+    background-color: $primary-color;
+    // background-color: $primary-color-dark;
   }
 }
 .buttonSecondary {
   // background-image: linear-gradient(to right, darken($secondary-color, 2%), $secondary-color);
   background-color: $secondary-color;
   color: #3D3D3D;
+  &:hover, &:active {
+    cursor: pointer;
+    background-color: $secondary-color-dark;
+  }
 }
+
 .buttonSuccess {
   background-color: $success-color;
   color: white;
-  & * {
-    text-align: center;
+  text-align: center;
+  &:hover  {
+    background-color: $success-color-dark;
   }
+  &:active  {
+    background-color: $success-color;
+  }
+
 }

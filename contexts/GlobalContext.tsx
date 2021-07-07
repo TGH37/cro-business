@@ -15,7 +15,7 @@ export const GlobalContext = createContext<globalOptions>({});
 
 export function GlobalProvider({ children }) {
 
-  const companyName = "Sale-Verge"; //TODO: Complete once confirmed
+  const companyName = "Sales-Verge"; //TODO: Complete once confirmed
   const fullNameOfLegalEntity = "Sales-Verge Optimisation Ltd."; //TODO: Complete once confirmed
   const companyNumber = "0316155478"; //TODO: Complete once confirmed
   const emailAddress = "email@address.com"; //TODO: Complete once confirmed

@@ -81,7 +81,7 @@ function Services(props: Props) {
       <div className={styles.btnContainer}>
         <button className={styles.showMore} style={{display: isShowButtonVisible ? "inline" : "none"}} onClick={handleExpandBtnClick}>{`Show ${viewableServices > 3 ? "Less" : "More"}`}</button>
       </div>
-      <Link href="#contact"><a><button className={styles.buttonPrimary} tabIndex={-1}>Get Started</button></a></Link>
+      <Link href="/#contact"><a><button className={styles.buttonPrimary} tabIndex={-1}>Get Started</button></a></Link>
     </section>
   );
 };

@@ -11,6 +11,7 @@ function Contact(props: Props) {
   return (
     <section className={styles.contactContainer} id="contact">
       <h1 className={`${styles.sectionTitle}`}>Get In Touch</h1>
+      <p>If you'd like to learn more about our services and pricing, please fill out the contact form below and we will contact you as soon as we are able.</p>
       <ContactDetails />
       <ContactForm />      
     </section>

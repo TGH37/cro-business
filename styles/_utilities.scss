@@ -1,19 +1,11 @@
-$dark-color: #5A6066;
-$light-color: #F0F0F0;
-$text-color: #333333;
-$danger-color: #BE2B36;
-$success-color: #5CBCB6;
-$highlight-color: #ADFF2F;
-$cool-color: #257FD7;
-$link-color: #337ab7;
-$header-color: #C3D9FF;
-$greyed-text: #333333;
-$white-color: #fff;
-$btn-hover-color: #99CCFF;
-
 $primary-color: #62CCC5;
 $secondary-color: #F0F0F0;
+$success-color: #5CBCB6;
+$text-color: #3D3D3D;
 
+$primary-color-dark: darken($primary-color, 15%);
+$secondary-color-dark: darken($secondary-color, 10%);
+$success-color-dark: darken($success-color, 10%);
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;

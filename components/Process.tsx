@@ -33,7 +33,7 @@ function Process(props: Props) {
           accessorArry.map((accessor, idx) => {
             const contentElement = contentArry.find((contentObj) => contentObj.accessor === accessor);
             if(!contentElement) return <></>;
-            const { title, icon, content } = contentElement;
+            const { title, content } = contentElement;
             return (
             <>
               <ProcessStep title={title} content={content} isLeftAligned={idx % 2 ? false: true} key={`processStep_${idx}`}/>

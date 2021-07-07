@@ -73,11 +73,17 @@
 
 .buttonPrimary:hover {
   cursor: pointer;
+  background-color: #319790;
 }
 
 .buttonSecondary {
   background-color: #F0F0F0;
   color: #3D3D3D;
+}
+
+.buttonSecondary:hover {
+  cursor: pointer;
+  background-color: #d7d7d7;
 }
 
 .buttonSuccess {
@@ -87,6 +93,10 @@
 
 .buttonSuccess * {
   text-align: center;
+}
+
+.buttonSuccess:hover {
+  background-color: #347e7a;
 }
 
 .servicesContainer {

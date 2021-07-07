@@ -22,8 +22,8 @@ function Hero(props: Props) {
         <h3 className={styles.subTitle}>At {companyName}, we provide data-driven solutions to optimise the conversion rate of your site</h3>
         <div className={styles.btnContainer}>
           {/* <button><Link href="#services"><a>Learn More</a></Link></button> */}
-          <Link href="#services"><a><button className={styles.buttonSecondary} tabIndex={-1}>Learn More</button></a></Link>
-          <Link href="#contact"><a><button className={styles.buttonPrimary} tabIndex={-1}>Get Started</button></a></Link>
+          <Link href="/#services"><a><button className={styles.buttonSecondary} tabIndex={-1}>Learn More</button></a></Link>
+          <Link href="/#contact"><a><button className={styles.buttonPrimary} tabIndex={-1}>Get Started</button></a></Link>
           {/* <button className={styles.buttonPrimary}><Link href="#contact"><a>Get Started</a></Link></button> */}
         </div>
       </div>

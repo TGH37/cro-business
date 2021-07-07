@@ -55,9 +55,9 @@ function Navbar(props: Props) {
       </div>
       {/* mobile layout (css adjusts position for desktop) */}
       <ul aria-label="navigation-menu" {...getMenuAttrs()}>
-        <li><Link href="/"><a>Home</a></Link></li>
-        <li><Link href="/#services"><a>Solutions</a></Link></li>
-        <li><Link href="/#contact"><a>Contact</a></Link></li>
+        <li><Link href="/"><a tabIndex={1}>Home</a></Link></li>
+        <li><Link href="/#services"><a tabIndex={1}>Solutions</a></Link></li>
+        <li><Link href="/#contact"><a tabIndex={1}>Contact</a></Link></li>
       </ul>
       <FontAwesomeIcon icon="bars" size={!mediaBreakpoints.xs ? "1x" : "2x"} aria-label="menu-icon" onClick={menuIconClickHandler} {...getMenuIconAttrs()} tabIndex={0}/>
     </nav>

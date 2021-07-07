@@ -13,7 +13,6 @@ header {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 ul {
@@ -36,7 +35,7 @@ h1, h2, h3, h4, p, a, ul {
   color: #3D3D3D;
 }
 
-h1, h3, p {
+h1, h2, h3, h4, p {
   text-align: center;
 }
 
