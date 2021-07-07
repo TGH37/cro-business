@@ -22,7 +22,7 @@ export function GlobalProvider({ children }) {
   const hqAddress = "5 Pasture Crescent, Chapel Allerton, Leeds, West Yorkshire, LS7 4QS";
   const registeredAddress = "5 Pasture Crescent, Chapel Allerton, Leeds, West Yorkshire, LS7 4QS";
   const webAddress = "www.sales-verge.com"; //TODO: Complete once confirmed
-  const contactNumber = "+447123456789"; //TODO: Complete once confirmed
+  const contactNumber = "+447712292714"; //TODO: Complete once confirmed
 
   return (
     <GlobalContext.Provider value={
