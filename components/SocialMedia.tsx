@@ -11,7 +11,7 @@ function SocialMedia(props: Props) {
   return (
     <div className={styles.socialMediaContainer}>
       <Link href="https://www.linkedin.com/feed/"><a target="_blank"><FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" className={styles.linkedin}/></a></Link>
-      <Link href="https://www.facebook.com/tom.hayton.94/"><a target="_blank"><FontAwesomeIcon icon={["fab", "facebook"]} size="2x"className={styles.facebook}/></a></Link>
+      <Link href="https://www.facebook.com/Convergence-CRO-100320065667890"><a target="_blank"><FontAwesomeIcon icon={["fab", "facebook"]} size="2x"className={styles.facebook}/></a></Link>
     </div>
   );
 };

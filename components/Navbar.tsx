@@ -48,7 +48,7 @@ function Navbar(props: Props) {
   return (
     <nav className={styles.navbar}>
       <div aria-label="logo-container" className={styles.logoContainer}>
-        <Image aria-label="logo" src={logo} height={80} width={80} />
+        <Image aria-label="logo" src={logo} height={80} width={142} />
       </div>
       <div className={styles.socialMediaContainer}>
         <SocialMedia />

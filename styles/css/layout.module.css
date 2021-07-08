@@ -51,10 +51,11 @@
 
 .navbar ul li a {
   font-size: 1.5rem;
+  transition-duration: 0.25s;
 }
 
 .navbar ul li a:hover {
-  color: #8a8a8a;
+  color: #7d7d7d;
 }
 
 .navbar ul :first-child, .navbar ul :last-child {
@@ -143,6 +144,14 @@
   .footerNav li {
     padding: 0;
   }
+}
+
+.footerNav li a {
+  transition-duration: 0.25s;
+}
+
+.footerNav li a:hover {
+  color: #7d7d7d;
 }
 
 .legalContainer {
